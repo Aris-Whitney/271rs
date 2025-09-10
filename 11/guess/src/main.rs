@@ -14,11 +14,11 @@ fn main() {
     // reading random bites from dev/urandom
     let mut devrnd =File::open("/dev/urandom").unwrap();
     let mut buffer=[0u8; (usize::BITS /8) as usize];
-    read::read_exact(&mut devrnd, &mut buffer).unwrap();
+    devrnd.read_exact(&mut buffer).unwrap();
 
     //Now we pick a random word
-    let index=usize::from_le_bytes(buffer) % WORDS.len();
-    let answer= String::from(WORDS[index]);
+    let secret=usize::from_le_bytes(buffer) % WORDS.len();
+    let answer= String::from(WORDS[secret]);
 
     //Debugging
 
@@ -34,7 +34,7 @@ fn main() {
         //check to see if it's a valid word
 
         if !WORDS.contains(&guess.as_str()) {
-            println!("{RED} Invalid Word {WHT}");
+            println!("{RED}Invalid Word{WHT}");
             continue;
         }
 
