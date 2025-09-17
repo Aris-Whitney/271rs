@@ -1,3 +1,5 @@
+use Hamming::*;
+
 fn main() {
-    println!("Hello, world!");
+    dbg!(hamming::weight_u8(0x33_u8));
 }
