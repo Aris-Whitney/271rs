@@ -1,0 +1,12 @@
+First 8 primes:
+2
+3
+5
+7
+11
+13
+17
+19
+
+Constants (fractional parts of sqrt(prime) * 2^64):
+sqrt(02) frac * 2^64 = 6a09e667f3bcc908
