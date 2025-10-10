@@ -1,7 +1,6 @@
 [package]
-name = "hamming"
-name = "sqrt_lab"
-name="42"
+name = "271rs"
+
 version = "0.1.0"
 edition = "2024"
 
