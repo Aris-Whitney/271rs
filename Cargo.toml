@@ -1,9 +1,8 @@
-[package]
-name = "271rs"
+[workspace]
+resolver="3"
+members = [
+    "sqrt_lab",
+    "sha512_42",
+    "72/bignum"
+]
 
-version = "0.1.0"
-edition = "2024"
-
-[dependencies]
-num-bigint = "0.4"
-num-traits = "0.2"
