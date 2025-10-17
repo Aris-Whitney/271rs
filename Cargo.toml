@@ -4,5 +4,5 @@ members = [
     "sqrt_lab",
     "sha512_42",
     "72/bignum"
-]
+, "io"]
 
